@@ -1,0 +1,165 @@
+/* CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.judul {
+    font-size: 20px;
+    margin-left: 100px;
+
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+nav li a::after {
+    content: '';
+    /* display: block; */
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+nav li a:hover::after { 
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transform: scaleX(0.5);
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul {
+    margin-right: 100px;
+}
+
+/* Akhir Navbar */
+
+
+/* Section */
+.container.img{
+    background-image: url(img/bg1.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    justify-items: auto;
+    text-align: center;
+    align-items: center;
+    filter: grayscale(0.6);
+}
+
+button {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition:all ease-in 0.5s;
+}
+
+.text {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    line-height: 40px;
+}
+
+h1 span {
+    font-weight: bold;
+}
+/* Akhir Hero Section */
+
+
+/* Icon */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    justify-items: center;
+    text-align: center;
+    
+}
+.circle {
+    width: 55px;
+    height: 50px;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+/* Akhir Icon */
+.col {
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
