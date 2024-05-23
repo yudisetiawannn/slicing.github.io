@@ -47,24 +47,26 @@ table {
 /* Navbar */
 
 nav {
+    position: fixed;
     width: 100%;
     height: 50px;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(83, 83, 83);
-    color: white;
+    color: rgb(9, 9, 9);
     padding: 15px;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .judul {
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 100px;
 
 }
 nav li a {
     text-decoration: none;
-    color: white;
+    color: rgb(2, 2, 2);
     padding: 20px;
 }
 
@@ -74,13 +76,15 @@ nav li a::after {
     height: 20px;
     width: 50px;
     position: absolute;
+    margin-left: -50px;
     transform: scaleX(0);
     transition: 0.5s;
 }
 
 nav li a:hover::after { 
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
     transform: scaleX(0.5);
+    transform: translate(5px 0);
 }
 
 nav ul li{
@@ -95,16 +99,27 @@ nav ul {
 
 
 /* Section */
-.container.img{
-    background-image: url(img/bg1.jpg);
+.hero {
+    width: 100%;
     height: 400px;
+    margin:auto;
+    background-image: url(img/bg1.jpg);
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    justify-items: auto;
+    background-position: center;
     text-align: center;
-    align-items: center;
-    filter: grayscale(0.6);
+    place-content: center;
+    filter: grayscale(0.5);
+}
+
+.hero .text {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    line-height: 40px;
+}
+
+h1 span {
+    font-weight: bold;
 }
 
 button {
@@ -118,28 +133,19 @@ button {
 button:hover {
     transition:all ease-in 0.5s;
 }
-
-.text {
-    color: white;
-    font-size: 30px;
-    text-shadow: 1px 1px 1px black;
-    line-height: 40px;
-}
-
-h1 span {
-    font-weight: bold;
-}
 /* Akhir Hero Section */
 
 
 /* Icon */
-.container {
-    display: flex;
+.container-icon{
+    width: 800px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
     justify-content: space-around;
     padding-top: 30px;
     justify-items: center;
     text-align: center;
-    
 }
 .circle {
     width: 55px;
@@ -147,12 +153,51 @@ h1 span {
     background-size: cover;
     border: 2px solid black;
     border-radius: 50%;
+    object-fit: contain;
     
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 /* Akhir Icon */
 .col {
     align-items: center;
     padding-bottom: 20px;
+}
+
+
+section {
+    background-color: rgb(247, 244, 244);
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+.container-FC {
+    width: 800px;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+}
+
+.container-FC img {
+    width: 800px;
+    height: 450px;
+    padding-top: 30px;
 }
 
 
